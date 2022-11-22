@@ -3,4 +3,4 @@ services:
   app:
     build : ./src
     ports:
-      - 3006:3006
+      - 3007:3007
