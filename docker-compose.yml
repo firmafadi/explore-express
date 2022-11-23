@@ -1,7 +1,17 @@
 version: '3.7'
+
 services:
   app:
+    container_name: 'app'
     build: .
-    container_name: exp-app
+    volumes:
+      - .:/app
+      - node_modules:/app/node_modules
     ports:
       - 3007:3007
+    stdin_open: true
+    environment:
+      - PORT=3007
+    command: npm start
+volumes:
+  node_modules:
