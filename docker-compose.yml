@@ -1,7 +1,7 @@
 version: '3.7'
 services:
   app:
-    build: /src
+    build: .
     container_name: exp-app
     ports:
       - 3007:3007
