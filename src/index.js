@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 3000;
 
 // For testing purposes 
 app.get("/", (req, res) => { 
-    res.send("<h2>V-Tax API</h2>"); 
+    res.send("<h2>V-Tax API V1</h2>"); 
 });
 
 app.use(bodyParser.json());
