@@ -12,6 +12,7 @@ services:
     stdin_open: true
     environment:
       - PORT=3007
+      - VIRTUAL_HOST=service.firmafadi.site
     command: npm start
   nginx-proxy:
     build:
