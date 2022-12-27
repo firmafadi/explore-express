@@ -13,11 +13,12 @@ services:
     environment:
       - PORT=3007
     command: npm start
- nginx-proxy:
+  volumes:
+    node_modules:
+  nginx-proxy:
     build:
       dockerfile: Dockerfile
       context: ./proxy
     ports:
       - 8080:8080
-volumes:
-  node_modules:
+
