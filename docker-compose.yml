@@ -19,6 +19,4 @@ services:
       context: ./proxy
     ports:
       - 8080:8080
-volumes:
-  node_modules:
 
